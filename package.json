@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Todo list",
   "main": "index.js",
-  "homepage": "https://EugeneRe95.github.io/todo_list-ciklum_task_internship-",
+  "homepage": "https://EugeneRe95.github.io/todo_list-ciklum_task_internship",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy":"gh-pages -d dist"
