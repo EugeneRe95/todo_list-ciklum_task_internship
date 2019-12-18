@@ -5,9 +5,14 @@
   margin: 0;
   font-family: 'McLaren', cursive; }
 
+html,
 body {
-  background: url("../img/background.jpg") repeat center top/cover;
-  color: #fff; }
+  height: 100%; }
+
+#app {
+  background: url("../img/bg.jpg") repeat center top/cover;
+  color: #fff;
+  height: 100%; }
 
 header {
   border-bottom: 2px solid #000;
@@ -28,11 +33,13 @@ button {
   width: 80%;
   text-align: center; }
   .empty-state #search {
+    min-width: 100px;
     width: 30%;
     padding: 5px;
     border: 2px solid #000;
     border-radius: 8px; }
   .empty-state select {
+    min-width: 50px;
     width: 10%;
     padding: 5px;
     border: 2px solid #000;
@@ -70,9 +77,9 @@ button {
   width: 80%;
   margin: 15px auto;
   padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 12px; }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
   #todos .todo-item {
     background: #fff;
     padding: 7px;
@@ -80,7 +87,8 @@ button {
     height: 300px;
     width: 250px;
     color: #000;
-    position: relative; }
+    position: relative;
+    margin: 15px; }
     #todos .todo-item .btn-options {
       width: 50px;
       position: absolute;

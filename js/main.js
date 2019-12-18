@@ -170,7 +170,7 @@ function showEditable(e) {
         });
         localStorage.setItem('items', JSON.stringify(todosItems));
         getTodo();
-        editable.style.display = 'none';
+        editable.style.display = 'none';   
         filterTodos();
     });
 }
